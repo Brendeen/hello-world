@@ -19,6 +19,9 @@ body{
     background-color: rgb(224, 0, 0);
     
 }
+body p{
+    line-height: 30px;
+}
 nav a{
     color: white;
     float: right;
