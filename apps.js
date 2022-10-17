@@ -3,6 +3,7 @@ document.write("Whats up ", nameSpace);
 console.log(nameSpace);
 
 if (nameSpace == "Brenden"){
+  else if(nameSpace == "brenden")
   document.write(", the almighty creator")
 }
 console.log(nameSpace);
