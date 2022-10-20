@@ -4,6 +4,9 @@ let usersName;
 
 function greeting(){
   usersName = prompt("Hey! Whats your name?");
+  if (usersName == ""){
+   usersName == prompt ("Please enter your name.");
+  }
   console.log("Whats good " + usersName);
   document.write("Whats up " + usersName);
   return usersName;
@@ -30,4 +33,17 @@ console.log("Switch question");
 
 switchYesNo();
 
+let userAnswerTwo;
 
+// function secondQuestion(){
+ // userAnswerTwo = prompt("Quick Mario question, who is Marios greatest enemy?");
+  // if (userAnswerTwo == "Bowser")
+  // alert ("Thats correct!");
+  // else if (userAnswerTwo == "bowser")
+  // alert ("Thats correct!");
+  // else 
+  // alert ("Not quite. Try again.");
+  
+// }
+
+// secondQuestion();
