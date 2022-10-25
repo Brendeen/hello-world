@@ -1,10 +1,10 @@
-'use strict';
+// 'use strict';
 
 let usersName;
 
 function greeting(){
-  usersName = prompt('Hey! Whats your name?');
-  document.write('Whats up ' + usersName)
+  usersName = prompt("Hey! I would like to ask a few questions before bringing you to my page! Whats your name?");
+  document.write("Whats up " + usersName)
   console.log('Whats good ' + usersName);
   return usersName;
 } 
@@ -30,18 +30,21 @@ console.log('Switch question');
 
 switchYesNo();
 
-// let correctAnswer = 'bowser'
+
+questionTwo();
+
+
+
 let userAnswerTwo
 
 function questionTwo(){
- let userAnswerTwo = prompt('Who is Super Marios greatest enemy?');{
+  let userAnswerTwo = prompt('Who is Super Marios greatest enemy?');{
+    
+    while (userAnswerTwo !== 'bowser'){
+      userAnswerTwo = prompt('incorrect... Hint: Hes the leader of the Koopa race');
+    }
+  }
   
-  while (userAnswerTwo !== 'bowser'){
-     userAnswerTwo = prompt('incorrect...');
-  }
-  }
   alert('You have answered correctly!')
   console.log(userAnswerTwo);
 }
-
-questionTwo();
