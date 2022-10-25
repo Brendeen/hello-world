@@ -30,17 +30,18 @@ console.log('Switch question');
 
 switchYesNo();
 
-let correctAnswer = 'bowser'
+// let correctAnswer = 'bowser'
 let userAnswerTwo
 
 function questionTwo(){
  let userAnswerTwo = prompt('Who is Super Marios greatest enemy?');{
   
-  while (userAnswerTwo === 'bowser');
+  while (userAnswerTwo !== 'bowser'){
      userAnswerTwo = prompt('incorrect...');
   }
+  }
+  alert('You have answered correctly!')
   console.log(userAnswerTwo);
-  return userAnswerTwo
 }
 
 questionTwo();
